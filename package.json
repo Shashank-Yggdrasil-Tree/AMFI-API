@@ -11,16 +11,6 @@
     "request": "^2.88.0"
   },
   "scripts": {
-    "start": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AmruthPillai/AMFI-API.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AmruthPillai/AMFI-API/issues"
-  },
-  "homepage": "https://github.com/AmruthPillai/AMFI-API#readme"
+    "start": "node server.js"
+  }
 }
