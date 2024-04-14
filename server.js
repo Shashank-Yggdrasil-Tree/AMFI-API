@@ -1,5 +1,5 @@
 var express = require('express')
-import rateLimit from 'express-rate-limit'
+var rateLimit = require('express-rate-limit')
 var app = express()
 
 var api = require('./index')
