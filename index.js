@@ -4,14 +4,14 @@ var router = express.Router()
 const request = require('request')
 
 function parseRangeData(body) {
-  fundData = []
-  bodyClean = body.replace(/\r?\n/g, "\n")
-  bodyArr = bodyClean.split("\n")
-  funds = bodyArr.map((str) => {
+  let fundData = []
+  let bodyClean = body.replace(/\r?\n/g, "\n")
+  let bodyArr = bodyClean.split("\n")
+  let funds = bodyArr.map((str) => {
     return str.split(";")
   })
 
-  headers = funds[0]
+  let headers = funds[0]
 
   for (let i = 1; i < funds.length; i++) {
     if (funds[i].length === 8) {
@@ -30,14 +30,14 @@ function parseRangeData(body) {
 }
 
 function parseData(body) {
-  fundData = []
-  bodyClean = body.replace(/\r?\n/g, "\n")
-  bodyArr = bodyClean.split("\n")
-  funds = bodyArr.map((str) => {
+  let fundData = []
+  let bodyClean = body.replace(/\r?\n/g, "\n")
+  let bodyArr = bodyClean.split("\n")
+  let funds = bodyArr.map((str) => {
     return str.split(";")
   })
 
-  headers = funds[0]
+  let headers = funds[0]
 
   for (let i = 1; i < funds.length; i++) {
     if (funds[i].length === 6) {
