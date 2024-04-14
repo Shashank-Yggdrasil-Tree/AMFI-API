@@ -77,7 +77,7 @@ router.get('/:schemeCode', function (req, res) {
 })
 
 router.get('/:startDate/:endDate', function (req, res) {
-  const url = 'http://portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx?tp=1&frmdt=' + req.params.startDate + '&todt=' + req.params.endDate
+  const url = 'https://portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx?tp=1&frmdt=' + req.params.startDate + '&todt=' + req.params.endDate
 
   request(url, function (error, response, body) {
     const fundData = parseRangeData(body)
@@ -87,7 +87,7 @@ router.get('/:startDate/:endDate', function (req, res) {
 })
 
 router.get('/:startDate/:endDate/:schemeCode', function (req, res) {
-  const url = 'http://portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx?tp=1&frmdt=' + req.params.startDate + '&todt=' + req.params.endDate
+  const url = 'https://portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx?tp=1&frmdt=' + req.params.startDate + '&todt=' + req.params.endDate
 
   request(url, function (error, response, body) {
     let fundData = parseRangeData(body)
